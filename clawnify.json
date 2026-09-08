@@ -1,0 +1,98 @@
+{
+  "$schema": "https://app.clawnify.com/schema/v1/clawnify.json",
+  "version": 1,
+  "name": "Property OS",
+  "description": "AI property management software for a developer or landlord: units, buyers, residents, documents and renders in one workspace, with a sales agent that prepares every touch and a person who decides.",
+  "icon": "icon.svg",
+  "tags": [
+    "property-management",
+    "real-estate",
+    "hospitality",
+    "crm",
+    "bundle"
+  ],
+  "category": "Real estate",
+  "workspace": {
+    "org": null
+  },
+  "bundle": {
+    "apps": [
+      {
+        "repo": "clawnify/OpenProperty",
+        "name": "Property"
+      },
+      {
+        "repo": "clawnify/OpenCRM",
+        "name": "CRM"
+      },
+      {
+        "repo": "clawnify/OpenChannels",
+        "name": "Inbox"
+      },
+      {
+        "repo": "clawnify/OpenDataRoom",
+        "name": "Data room"
+      },
+      {
+        "repo": "clawnify/OpenRenderStudio",
+        "name": "Renders"
+      }
+    ],
+    "agents": [
+      {
+        "name": "Sales",
+        "role": "Buyer pipeline and unit hand-over",
+        "path": "agents/sales",
+        "required": true
+      },
+      {
+        "name": "Resident",
+        "role": "Triages resident and supplier requests into work orders",
+        "path": "agents/resident",
+        "required": false
+      },
+      {
+        "name": "Studio",
+        "role": "Stages units and prepares the visuals a listing needs",
+        "path": "agents/studio",
+        "required": false
+      }
+    ],
+    "getting_started": "docs/GETTING-STARTED.md"
+  },
+  "deploy": {
+    "title": "Deploy Property OS",
+    "subtitle": "One workspace for the units you sell and the homes you run: property ledger, buyer pipeline, shared inbox, data room, renders, and a sales agent that drafts every touch for your approval.",
+    "prompts": [
+      {
+        "key": "project_name",
+        "label": "Project or company name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "portfolio",
+        "label": "What do you manage?",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "e.g. 14 units in two buildings under construction in Padova, unsold; plus a hotel fit-out project in Asia"
+      },
+      {
+        "key": "mode",
+        "label": "Primary use",
+        "type": "select",
+        "options": [
+          "Homes for sale",
+          "Rentals",
+          "Both"
+        ]
+      },
+      {
+        "key": "currency",
+        "label": "Currency",
+        "type": "text",
+        "placeholder": "EUR"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+[submodule "apps/open-property"]
+	path = apps/open-property
+	url = https://github.com/clawnify/OpenProperty.git
+[submodule "apps/open-crm"]
+	path = apps/open-crm
+	url = https://github.com/clawnify/OpenCRM.git
+[submodule "apps/open-channels"]
+	path = apps/open-channels
+	url = https://github.com/clawnify/OpenChannels.git
+[submodule "apps/open-dataroom"]
+	path = apps/open-dataroom
+	url = https://github.com/clawnify/OpenDataRoom.git
+[submodule "apps/open-render-studio"]
+	path = apps/open-render-studio
+	url = https://github.com/clawnify/OpenRenderStudio.git

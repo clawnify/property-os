@@ -1,0 +1,7 @@
+{
+  "$schema": "https://app.clawnify.com/schema/v1/clawnify.json",
+  "version": 1,
+  "name": "Sales",
+  "description": "Buyer pipeline agent for Property OS. Files every enquiry, keeps one deal per unit, drafts every reply for approval, and proposes the hand-over when a unit is sold. Never sends, never signs, never records a payment.",
+  "agent": { "harness": "openclaw" }
+}
