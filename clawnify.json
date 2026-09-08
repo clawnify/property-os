@@ -75,7 +75,7 @@
         "label": "What do you manage?",
         "type": "textarea",
         "required": true,
-        "placeholder": "e.g. 14 units in two buildings under construction in Padova, unsold; plus a hotel fit-out project in Asia"
+        "placeholder": "e.g. 12 apartments in one building, half sold and half to let; or 40 rentals across three towns"
       },
       {
         "key": "mode",
