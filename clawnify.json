@@ -27,7 +27,13 @@
       },
       {
         "repo": "clawnify/OpenChannels",
-        "name": "Inbox"
+        "name": "Inbox",
+        "env": {
+          "CRM_APP_ID": {
+            "fromMember": "clawnify/OpenCRM",
+            "property": "app_id"
+          }
+        }
       },
       {
         "repo": "clawnify/OpenDataRoom",
